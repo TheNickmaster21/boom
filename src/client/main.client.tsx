@@ -9,4 +9,4 @@ const warningGui = (
     </screengui>
 );
 
-const handle = Roact.mount(warningGui, playerGui, 'WarningGUI');
+game.GetService('Players').LocalPlayer.CharacterAdded.Connect(() => Roact.mount(warningGui, playerGui, 'WarningGUI'));
